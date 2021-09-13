@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Join Us!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="pics/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="pics/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="pics/favicon/favicon-16x16.png">
+	<link rel="manifest" href="pics/favicon/site.webmanifest">
+</head>
+
+	<body>
+		<section class="showcase">
+			<header>
+                <h2>RSVP</h2>
+                <div class="toggle"></div>
+            </header>
+
+            <picture>
+                <img src="pics/white_background.png" />
+            </picture>
+
+			<div class="rsvp">
+				<div class="item">
+					<form action="insert.php" method="post">
+						<ul>
+							<input type="text" id="fname" name="fname" placeholder="First Name" required> </br>
+
+							<input type="text" id="lname" name="lname" placeholder="Last Name" required>
+							<div class="attendance">
+
+								<input type="radio" name="attending" id="attending" value="1" required>
+
+								<label for="attending">Able to attend! :)</label>
+								<div class="reveal-if-active" style="text-align: center;">
+
+									<input type="number" id="numattend" name="numattend" placeholder="Number Attending" min="0" max="20">
+								</div>
+									
+
+								<input type="radio" name="attending" id="notattending" value="0" required>
+
+								<label for="notattending">Not able to attend :(</label> 
+							</div>
+
+							<input type="submit" id="submit" value="Submit">
+						</ul>
+					</form>
+				</div>
+			</div>
+		</section>
+			
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="pics.html">Pics</a></li>
+				<li><a href="registry.html">Registry</a></li>
+				<li><a href="rsvp.html">RSVP</a></li>
+			</ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
