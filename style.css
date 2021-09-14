@@ -187,8 +187,7 @@
 
 .rsvp {
 	z-index: 2;
-	position: absolute;
-	width: 92%;
+	width: 100%;
 }
 
 .rsvp form input {
