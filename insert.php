@@ -7,7 +7,7 @@
         if ($mysqli->connect_errno) {
             echo "Failed to connect to database: " . $mysqli -> connect_error;
             exit();
-          }
+        }
 
         $sql = "INSERT INTO rsvp (fname, lname, attending, numattend)
             VALUES
