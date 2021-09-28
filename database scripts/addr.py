@@ -8,4 +8,3 @@ if df.duplicated().any():
   print(df[df.duplicated()])
 else:
   print('No dupldies :)')
-
