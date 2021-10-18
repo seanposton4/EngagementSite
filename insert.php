@@ -17,7 +17,7 @@
             header("Location: thankyou.html");
         }
         else {
-            header("Location: form-error.html")
+            header("Location: form-error.html");
         }
         $mysqli->close();
     ?>
