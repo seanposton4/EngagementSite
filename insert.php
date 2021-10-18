@@ -17,7 +17,7 @@
             header("Location: thankyou.html");
         }
         else {
-            echo 'uh oh There was an error! Please contact Rachel or Sean directly with your RSVP!';
+            header("Location: form-error.html")
         }
         $mysqli->close();
     ?>
