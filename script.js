@@ -40,8 +40,25 @@ function displayCountdown () {
     Purpose: display countdown timer until wedding
     Author: Sean Poston
     */
-    var currentLocation = window.location;
-    if (currentLocation['pathname'] === '/index.html') {
+
+    //omit certain pages
+    //must do exclusive rather than inclusive 
+    //due to home page not having anything
+    let currentLocation = window.location;
+
+    let nonDisplay =    [
+                            '/about.html', 
+                            '/rsvp.html', 
+                            '/include.php',
+                            '/pics.html', 
+                            '/registry.html', 
+                            '/script.js', 
+                            '/thankyou.html', 
+                            '/form-error.html',
+                            '/groomsmen.html',
+                        ];
+
+    if (!nonDisplay.includes(currentLocation['pathname'])) {
         const weddingDate = new Date('Nov 27, 2021 15:00:00').getTime();
 
         //run the function once to immediately display
@@ -62,7 +79,7 @@ function displayCountdown () {
             document.getElementById('timer').innerHTML = times[0] + "d " + times[1] + ":" 
                 + times[2] + ":" + times[3];
 
-            //if timer is at 0, break loop and display we're married
+            //if timer is at 0, break loop and display string
             if (times[4] <= 0) {
                 document.getElementById('timer').innerHTML = "We're married!";
                 clearInterval(loop);
