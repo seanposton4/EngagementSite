@@ -159,6 +159,10 @@
 	font-weight: 700;
 }
 
+.top-margin {
+	margin-top: 4rem;
+}
+
 .sale {
 	text-align: center;
 	padding-top: 15px;
